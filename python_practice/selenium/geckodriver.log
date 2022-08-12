@@ -1,0 +1,119 @@
+1657309188535	geckodriver	INFO	Listening on 127.0.0.1:54689
+1657309191575	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54690" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofilefseisV"
+1657309192580	Marionette	INFO	Marionette enabled
+1657309192588	Marionette	INFO	Listening on port 54700
+WebDriver BiDi listening on ws://localhost:54690
+Read port: 54700
+1657309193357	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofilefseisV\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54690/devtools/browser/e4041aa6-0160-4c9b-9b11-a2179ee94414
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1657309204380	geckodriver	INFO	Listening on 127.0.0.1:54762
+1657309207386	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54763" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileF5O4uv"
+1657309207763	Marionette	INFO	Marionette enabled
+1657309207772	Marionette	INFO	Listening on port 54772
+WebDriver BiDi listening on ws://localhost:54763
+Read port: 54772
+1657309207942	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileF5O4uv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54763/devtools/browser/3e07fa90-ffad-41c0-ab70-447450c909c5
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1657309411118	Marionette	INFO	Stopped listening on port 54772
+e-debugging-port" "54834" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileQEjsHK"
+1657309269355	Marionette	INFO	Marionette enabled
+1657309269362	Marionette	INFO	Listening on port 54846
+WebDriver BiDi listening on ws://localhost:54834
+Read port: 54846
+1657309269533	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileQEjsHK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54834/devtools/browser/838d9217-e5f8-4cdc-b263-c21df21d9e42
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1657309412468	Marionette	INFO	Stopped listening on port 54846
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "54907" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileK1E8Us"
+1657309297223	Marionette	INFO	Marionette enabled
+1657309297230	Marionette	INFO	Listening on port 54917
+WebDriver BiDi listening on ws://localhost:54907
+Read port: 54917
+1657309297378	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileK1E8Us\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54907/devtools/browser/a9482f6d-cad1-4e6d-8c98-2481cca1bddf
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1657309413831	Marionette	INFO	Stopped listening on port 54917
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "54982" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileI68XVm"
+1657309375769	Marionette	INFO	Marionette enabled
+1657309375776	Marionette	INFO	Listening on port 54991
+WebDriver BiDi listening on ws://localhost:54982
+Read port: 54991
+1657309376160	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileI68XVm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54982/devtools/browser/aa9da6d1-1619-4c55-bb3d-f415ac828624
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1657309383468	Marionette	INFO	Stopped listening on port 54991
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1657309764001	geckodriver	INFO	Listening on 127.0.0.1:55509
+1657309767056	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55510" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofile7oomk6"
+1657309767572	Marionette	INFO	Marionette enabled
+1657309767580	Marionette	INFO	Listening on port 55519
+WebDriver BiDi listening on ws://localhost:55510
+Read port: 55519
+1657309767756	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofile7oomk6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55510/devtools/browser/b145177d-900d-485a-b38d-e41ebd661031
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1657310211337	Marionette	INFO	Stopped listening on port 55519
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "55574" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileTQGkEZ"
+1657309802029	Marionette	INFO	Marionette enabled
+1657309802038	Marionette	INFO	Listening on port 55583
+WebDriver BiDi listening on ws://localhost:55574
+Read port: 55583
+1657309802185	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileTQGkEZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55574/devtools/browser/1567a0a0-a6f2-4b23-a4ec-4b073a246007
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1657310209602	Marionette	INFO	Stopped listening on port 55583
+e-debugging-port" "55648" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileOibNRl"
+1657309907013	Marionette	INFO	Marionette enabled
+1657309907020	Marionette	INFO	Listening on port 55657
+Read port: 55657
+WebDriver BiDi listening on ws://localhost:55648
+1657309907165	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofileOibNRl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55648/devtools/browser/f3c6e713-9353-43d8-b081-cdaf79e4a12f
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1657309910728	Marionette	INFO	Stopped listening on port 55657
+1657309917424	geckodriver	INFO	Listening on 127.0.0.1:55706
+1657309920455	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55707" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofilenYi4lL"
+1657309920918	Marionette	INFO	Marionette enabled
+1657309920925	Marionette	INFO	Listening on port 55716
+WebDriver BiDi listening on ws://localhost:55707
+Read port: 55716
+1657309921099	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suhel\\AppData\\Local\\Temp\\rust_mozprofilenYi4lL\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55707/devtools/browser/57e1f66b-12f3-44b3-aafe-1a827a907166
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://selenium-blog.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1657309924826	Marionette	INFO	Stopped listening on port 55716
