@@ -1,0 +1,19 @@
+def count_smileys(arr):
+    #return #the number of valid smiley faces in array/list
+    smileys = []
+    for i in arr:
+        if len(i) == 2 and i[0] in [':',';'] and i[1] in [')','D']:
+            smileys.append(i)
+        if len(i) > 2 and i[0] in [':',';'] and i[1] in ['-','~'] and i[2] in ['D',')']:
+            smileys.append(i)
+    
+    return len(smileys)
+
+print(count_smileys([';]', ':[', ';*', ':$', ';-D']))
+     
+
+# list = [':D',':~)',';~D',':)']
+
+# for smiley in list:
+#     if smiley == ':)' or ':D' or ';-D' or ':~':
+#         print(smiley)
