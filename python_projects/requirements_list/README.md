@@ -1,4 +1,6 @@
-Use the python file to extract requirements from your SAD or SRS pdf files and put them as a dataframe in a csv file. 
+**Requirements Extraction Program**
+
+This program is created to extract software requirements from PDF files to a csv for traceability purposes 
 
 How to run:
 1. Install the requirement.txt using command pip install -r requirements.txt (Best Practice: Create a virtual environment before installing libraries)
