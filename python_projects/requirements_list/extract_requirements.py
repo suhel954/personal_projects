@@ -8,6 +8,7 @@ pdf = PdfFileReader('SAD.pdf')
 my_dict = {"Requirement":[],"Details":[]}
 
 
+#create a text file of the pdf to extract data
 with Path('SAD.txt').open(mode='w') as output_file:
     text = ''
     for page in pdf.pages:
