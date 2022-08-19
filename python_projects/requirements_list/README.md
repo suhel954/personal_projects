@@ -11,4 +11,4 @@ How to run:
 1. Add variable input for files name
 2. Add variable input for requirement initial
 
-Note: For some reason the requirement SAD/SRS pdf file gets corrupted and can fail the file from running
+Note: For some reason the requirement SAD/SRS pdf file gets corrupted and can fail the file from running. Testing only done for 1 page documents. Will update after more pages are tested.
