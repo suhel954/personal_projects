@@ -28,6 +28,9 @@ class Employee:
     def __str__(self) -> str:
         return '{} - {}'.format(self.fullname(), self.email)
 
+    def __add__(self,other):
+        return self.pay + other.pay
+
 
     # @classmethod
     # def set_raise_amt(cls, amount):
@@ -88,6 +91,9 @@ print(issubclass(Developer, Manager))
 print(dev1)
 
 print(dev1.__repr__())
+
+print(dev1 + dev2)
+
 
 
 
