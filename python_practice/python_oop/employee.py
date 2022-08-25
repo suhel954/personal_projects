@@ -22,32 +22,72 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay*self.raise_amount)
 
-    @classmethod
-    def set_raise_amt(cls, amount):
-        cls.raise_amount = amount
+    def __repr__(self) -> str:
+        return "Employee('{}','{}','{}')".format(self.first,self.last,self.pay)
 
-    @classmethod
-    def from_string(cls, emp_string):
-        first, last, pay = emp_string.split('-')
-        return cls(first, last, pay)
-
-    @staticmethod
-    def is_workday(day):
-        if day.weekday() == 5 or day.weekday() == 6:
-            return False
-        return True
+    def __str__(self) -> str:
+        return '{} - {}'.format(self.fullname(), self.email)
 
 
+    # @classmethod
+    # def set_raise_amt(cls, amount):
+    #     cls.raise_amount = amount
 
-emp1 = Employee('Suhel','Shaikh',50000)
-emp2 = Employee('Sohel','Shssikh',60000)
+    # @classmethod
+    # def from_string(cls, emp_string):
+    #     first, last, pay = emp_string.split('-')
+    #     return cls(first, last, pay)
+
+    # @staticmethod
+    # def is_workday(day):
+    #     if day.weekday() == 5 or day.weekday() == 6:
+    #         return False
+    #     return True
 
 
-my_date = datetime.date(2022, 8, 25)
+class Developer(Employee):
+    raise_amount = 1.10
 
-print(Employee.is_workday(my_date))
+    def __init__(self, first, last, pay, prog_lang):
+        super().__init__(first, last, pay)
+        self.prog_lang = prog_lang
 
 
+class Manager(Employee):
+    def __init__(self, first, last, pay, employees=None):
+        super().__init__(first, last, pay)
+        if employees is None:
+            self.employees = []
+        else:
+            self.employees = employees
+
+    
+    def add_employee(self, emp):
+        if emp not in self.employees:
+            self.employees.append(emp)
+
+
+    def remove_employee(self, emp):
+        if emp in self.employees:
+            self.employees.remove(emp)
+
+
+    def print_emps(self):
+        for emp in self.employees:
+            print('--->', emp.fullname())
+
+
+
+dev1 = Developer('Suhel','Shaikh',50000, 'python')
+dev2 = Developer('Sohel','Shssikh',60000, 'java')
+mgr_1 = Manager('Sur', 'Alba', 90000, [dev1, dev2])
+
+
+print(issubclass(Developer, Manager))
+
+print(dev1)
+
+print(dev1.__repr__())
 
 
 
