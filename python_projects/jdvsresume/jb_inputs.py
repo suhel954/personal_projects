@@ -1,4 +1,5 @@
 from time import sleep
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
@@ -21,41 +22,27 @@ def login_linkedin():
     global driver
     driver = webdriver.Chrome(executable_path=r"D:\Programming\drivers\chromedriver.exe", chrome_options=chrome_options)
     chrome_options.add_argument("--incognito")
-    driver.get('https://www.google.com/')
+    wait = WebDriverWait(driver,10)
+    driver.get('https://www.linkedin.com/')
     driver.maximize_window()
+
+    #username
+    element = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="session_key"]')))
+    element.clear()
+    element.send_keys('suhelshaikh607@gmail.com')
+
+    #password
+    element = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="session_password"]')))
+    element.clear()
+    element.send_keys('Gulu@1947')
+    element.send_keys(Keys.RETURN)
     
-    #google search field
-    element = driver.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input')
-    element.clear()
-    element.send_keys('LinkedIn: Jobs')
-    element.send_keys(Keys.ENTER)
-
-    #find the linkedin search page
-    element = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.LINK_TEXT, 'Search for the Right Jobs'))
-    )
+    #click on the jobs tab
+    element = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="msg-overlay"]/div[1]/header/div[2]')))
     element.click()
+    
 
-    #search for the job
-    #job_input
-    element = WebDriverWait(driver,5).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/header/nav/section/section[2]/form/section[1]/input')))
-    element.clear()
-    element.send_keys('Test Engineer')
 
-    #job_location
-    element = WebDriverWait(driver,5).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/header/nav/section/section[2]/form/section[2]/input')))
-    element.clear()
-    element.send_keys('United States')
-    element.send_keys(Keys.ENTER)
-
-    #list of jobs on first page
-    #eles = []
-    eles = driver.find_elements(By.XPATH, "//a[contains(@class, 'base-card__full-link absolute top-0 right-0 bottom-0 left-0 p-0 z-[2]')]")
-    for e in eles:
-        print(e.get_attribute('href'))
-
-    #list is now being generated but it moves to login, need to find a way to click on the 
 
 login_linkedin()
 
-#

@@ -1,5 +1,8 @@
 Script to automate job search and create a csv of matching keywords
 
+Issue #4: Seems like logging in as an existing user in the beginning will make it a lot easier to navigate
+Task #1: Add login in the beginning of the script
+(Solved)
 Issue #3: Job listing is available as a list but the list cannot be clicked with a link
 
 (Solved)
