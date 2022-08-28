@@ -13,8 +13,8 @@ def login_linkedin():
 
     # linkedin_username = input('Please provide linkedin username: ')
     # linkedin_password = input('Please provide linkedin password: ')
-    job_name = input('Please input the job name: ')
-    job_location = input('Please provide location: ')
+    # job_name = input('Please input the job name: ')
+    # job_location = input('Please provide location: ')
 
     chrome_options = webdriver.ChromeOptions()
     #prevent window from closing
@@ -40,13 +40,19 @@ def login_linkedin():
     #job_input
     element = WebDriverWait(driver,5).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/header/nav/section/section[2]/form/section[1]/input')))
     element.clear()
-    element.send_keys(job_name)
+    element.send_keys('Test Engineer')
 
-    #location
+    #job_location
     element = WebDriverWait(driver,5).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/header/nav/section/section[2]/form/section[2]/input')))
     element.clear()
-    element.send_keys(job_location)
+    element.send_keys('United States')
     element.send_keys(Keys.ENTER)
+
+    #list of jobs on first page
+
+    eles = driver.find_elements(By.XPATH, '//*[@id="main-content"]/section[2]/ul/li[1]/div/a')
+    for e in eles:
+        e.click()
 
 login_linkedin()
 

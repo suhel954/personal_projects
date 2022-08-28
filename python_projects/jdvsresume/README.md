@@ -1,6 +1,9 @@
 Script to automate job search and create a csv of matching keywords
 
-Issue #2: Need to find a way to select each job listing from the class: jobs-search__results-list and copy the text of the job description
+Issue #3: Job listing is available as a list but the list cannot be clicked with a link
+
+(Solved)
+Issue #2: Need to find a way to select each job listing from the class: jobs-search__results-list
 
 (Solved)
 Issue #1: If logged in to linkedin to search for a job, linkedin will do a bot verification.
