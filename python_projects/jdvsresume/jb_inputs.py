@@ -49,10 +49,13 @@ def login_linkedin():
     element.send_keys(Keys.ENTER)
 
     #list of jobs on first page
-
-    eles = driver.find_elements(By.XPATH, '//*[@id="main-content"]/section[2]/ul/li[1]/div/a')
+    #eles = []
+    eles = driver.find_elements(By.XPATH, "//a[contains(@class, 'base-card__full-link absolute top-0 right-0 bottom-0 left-0 p-0 z-[2]')]")
     for e in eles:
-        e.click()
+        print(e.get_attribute('href'))
+
+    #list is now being generated but it moves to login, need to find a way to click on the 
 
 login_linkedin()
 
+#
