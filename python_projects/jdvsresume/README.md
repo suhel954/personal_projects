@@ -1,5 +1,8 @@
 Script to automate job search and create a csv of matching keywords
 
+Task #2: Click on each job listing and copy the text
+
+(Done)
 Issue #4: Seems like logging in as an existing user in the beginning will make it a lot easier to navigate
 Task #1: Add login in the beginning of the script
 (Solved)
