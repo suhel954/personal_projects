@@ -1,11 +1,11 @@
 from time import sleep
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-
 
 def login_linkedin():
 
@@ -21,7 +21,7 @@ def login_linkedin():
     global driver
     driver = webdriver.Chrome(executable_path=r"D:\Programming\drivers\chromedriver.exe", chrome_options=chrome_options)
     chrome_options.add_argument("--incognito")
-    wait = WebDriverWait(driver,10)
+    wait = WebDriverWait(driver,20)
     driver.get('https://www.linkedin.com/')
     driver.maximize_window()
 
@@ -38,23 +38,32 @@ def login_linkedin():
     
     #move to job links
     driver.get('https://www.linkedin.com/jobs')
-    element = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="jobs-search-box-keyword-id-ember25"]')))
-    element.clear()
-    element.send_keys('Test Engineer')
-    element.send_keys(Keys.RETURN)
 
     #minimize the message board if it is present
-    try:
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='msg-overlay-bubble-header__details flex-row align-items-center ml1']")))
-        element.click()
-    except:
-        pass
-    finally:
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='jobs-search-box-location-id-ember136']")))
-        element.clear()
-        element.send_keys('United States')
-        element.send_keys(Keys.RETURN)
+    element = wait.until(EC.element_to_be_clickable((By.XPATH, '//div[@class="msg-overlay-bubble-header__details flex-row align-items-center ml1"]')))
+    element.click()
 
+    time.sleep(5)
+
+    element = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="jobs-search-box-keyword-id-ember25"]')))
+    element.clear()
+    element.send_keys('Test Engineer', Keys.RETURN)
+
+
+
+    #switch to current frame
+    # element = wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@id="jobs-search-box-location-id-ember259"]')))
+    # element.clear()
+    # element.send_keys('Remote')
+    # element.send_keys(Keys.RETURN)
+
+    #for job in list, click on each job and copy the JD, try for a single job listing first
+    element = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ember388"]')))
+    print(element.get_attribute('href'))
+
+    #split the JD and create a set
+
+    #grab the API
 
 login_linkedin()
 
